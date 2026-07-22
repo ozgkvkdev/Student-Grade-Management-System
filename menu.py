@@ -1,11 +1,14 @@
-# sistem mesajı verildi
-print("="*50)
-print("ÖĞRENCİ NOT YÖNETİM SİSTEMİ")
-print("="*50)
+def baslik_goster():
+ 
 
-# seçim ekranı
+ print("="*50)
+ print("ÖĞRENCİ NOT YÖNETİM SİSTEMİ")
+ print("="*50)
 
-def menu_göster():
+
+
+def menu_goster():
+    print()
     print("1- Öğrenci Ekle")
     print("2- Öğrencileri Listele")
     print("3- Not Ekle")
@@ -14,4 +17,9 @@ def menu_göster():
     print("6- Öğrenci Sil")
     print("7- çıkış")
 
-menu_göster()
+
+
+def kullanici_secimi():
+   secim=input("Seçiminiz:")
+   return secim
+       
