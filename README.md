@@ -35,11 +35,10 @@ Student-Grade-Management-System/
 ├── grades.py               # Not işlemleri
 ├── average.py              # Ortalama hesaplama
 ├── data.py                 # Öğrenci verileri
+├── assets/
+│   └── screenshot.png
 ├── README.md
-├── .gitignore
-│
-└── assets/
-    └── screenshot.png
+└── .gitignore
 ```
 
 ---
