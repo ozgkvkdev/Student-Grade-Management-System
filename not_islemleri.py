@@ -1,19 +1,22 @@
 from veriler import ogrenciler
 
 def not_ekle():
-    ogrenci_no=input("Öğrenci Numarasını Giriniz: ")
-    bulundu=False
+    no = input("Öğrenci Numarasını Giriniz: ")
+    bulundu = False
+    
     for ogrenci in ogrenciler:
-        if ogrenci['numara'] == ogrenci_no:
-            bulundu=True
+        if ogrenci['numara'] == no:
+            bulundu = True
             print("Öğrenci Bulundu")
+            
             try:
-                not_degeri=input("Notunuzu Giriniz: ")
-                ogrenci['notlar'].append(int(not_degeri))
+                puan = input("Notunuzu Giriniz: ")
+                ogrenci['notlar'].append(int(puan))
                 print("Not Başarıyla Eklendi.")
             except ValueError:
-                print("Hata: Geçerli bir sayı giriniz.")
+                print("Lütfen geçerli bir sayı giriniz.")
             break
+    
     if not bulundu:
         print("Öğrenci Bulunamadı.")
         
