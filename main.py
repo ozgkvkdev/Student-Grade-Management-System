@@ -1,13 +1,14 @@
-from menu import baslik_goster,menu_goster,kullanici_secimi
-from ogrenci import ogrenci_ekle,ogrencileri_listele
+from menu import baslik_goster, menu_goster, kullanici_secimi
+from ogrenci import ogrenci_ekle, ogrencileri_listele
+from not_islemleri import not_ekle
+from ortalama import ortalama_hesapla
+
 
 baslik_goster()
-menu_goster()
 
-secim=kullanici_secimi()
-print(f"Seçiminiz: {secim}")
 
 while True:
+
     menu_goster()
 
     secim = kullanici_secimi()
@@ -18,6 +19,15 @@ while True:
     elif secim == "2":
         ogrencileri_listele()
 
+    elif secim == "3":
+        not_ekle()
+
+    elif secim == "4":
+        ortalama_hesapla()
+
     elif secim == "7":
         print("Program kapatılıyor...")
         break
+
+    else:
+        print("Geçersiz seçim yaptınız.")
